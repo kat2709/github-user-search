@@ -1,5 +1,6 @@
 import MoonIcon from "./assets/moon.svg";
 import SearchIcon from "./assets/search.svg";
+import UserAvatar from "./assets/octocat.svg";
 // import SunIcon from "./assets/sun.svg";
 
 export function App() {
@@ -41,11 +42,35 @@ function SearchBox({ children }: any) {
   );
 }
 
-function DevInfoBox({ children }: any){
-return (
-<div className="">
-{/* <UserAvatar></UserAvatar> */}
-<div></div>
-</div>
-)
+function DevInfoBox({ children }: any) {
+  return (
+    <div className="mt-8 bg-violet-950 p-10 rounded-lg">
+      <UserAvatar className="w-28 h-28 bg-white rounded-full"></UserAvatar>
+      <div>
+        <div>The Octocat</div>
+        <div>Joined 25 Jan 2011</div>
+      </div>
+      <div>@octocat</div>
+      <div>
+        <div>
+          <div>Repos</div>
+          <div>8</div>
+        </div>
+        <div>
+          <div>Followers</div>
+          <div>3938</div>
+        </div>
+        <div>
+          <div>Following</div>
+          <div>9</div>
+        </div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  );
 }
